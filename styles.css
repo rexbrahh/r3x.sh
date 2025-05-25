@@ -35,11 +35,22 @@ body {
 a {
     color: var(--accent-color);
     text-decoration: none;
-    transition: opacity 0.2s ease;
+    transition: all 0.2s ease;
+    padding: 0;
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
 }
 
 a:hover {
-    opacity: 0.8;
+    opacity: 1;
+    background-color: var(--accent-color);
+    color: white;
+    transform: translateY(-1px);
+}
+
+a:active {
+    transform: translateY(0);
 }
 
 h1, h2, h3 {
@@ -57,7 +68,11 @@ h2 {
 }
 
 p, ul {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
+}
+
+section p + p {
+    margin-top: 0;
 }
 
 ul {
@@ -70,7 +85,7 @@ li {
 }
 
 .header {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .project {
@@ -95,8 +110,14 @@ li {
 
 .social-links {
     display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+}
+
+.social-links a {
+    flex: 0 1 auto;
 }
 
 @media (max-width: 600px) {
