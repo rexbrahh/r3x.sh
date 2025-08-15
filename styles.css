@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 :root {
-    --bg-color: #ffffff;
-    --text-color: #333;
+    --bg: #ffffff;
+    --text: #111;
+    --muted: #666;
     --accent-color: #0070f3;
-    --secondary-color: #666;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-color: #ffffff;
-        --text-color: #333;
-        --accent-color: #0070f3;
-        --secondary-color: #666;
+        --bg: #0b0b0c;
+        --text: #e8e8ea;
+        --muted: #9b9ba1;
+        --accent-color: #66a3ff;
     }
 }
 
@@ -25,11 +25,37 @@
 body {
     font-family: 'Special Elite', monospace;
     line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--bg-color);
+    color: var(--text);
+    background-color: var(--bg);
     max-width: 700px;
     margin: 0 auto;
     padding: 2rem;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+nav {
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+nav a {
+    padding: 0.25rem 0.5rem;
+}
+
+nav a.active {
+    background-color: var(--accent-color);
+    color: white;
 }
 
 a {
@@ -98,14 +124,16 @@ li {
 }
 
 .project-description {
-    color: var(--secondary-color);
+    color: var(--muted);
 }
 
 .footer {
     margin-top: 3rem;
     padding-top: 1rem;
-    color: var(--secondary-color);
+    color: var(--muted);
     font-size: 0.9rem;
+    text-align: center;
+    border-top: 1px solid var(--muted);
 }
 
 .social-links {
@@ -120,8 +148,89 @@ li {
     flex: 0 1 auto;
 }
 
+.intro {
+    margin-bottom: 2rem;
+}
+
+.prose {
+    max-width: none;
+}
+
+.prose h2, .prose h3 {
+    position: relative;
+}
+
+.prose h2:hover .anchor-link,
+.prose h3:hover .anchor-link {
+    opacity: 1;
+}
+
+.anchor-link {
+    position: absolute;
+    left: -1.5rem;
+    opacity: 0;
+    transition: opacity 0.2s;
+    text-decoration: none;
+    color: var(--muted);
+}
+
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--muted);
+}
+
+.post-item:last-child {
+    border-bottom: none;
+}
+
+.post-meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.post-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+}
+
+.post-summary {
+    color: var(--muted);
+    margin: 0;
+}
+
+.tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.tag {
+    background: var(--muted);
+    color: var(--bg);
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.tag:hover {
+    background: var(--accent-color);
+    color: white;
+}
+
 @media (max-width: 600px) {
     body {
         padding: 1.5rem;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
     }
 } 

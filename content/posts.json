@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Building Systems That Scale",
+    "slug": "building-systems-that-scale",
+    "date": "2025-01-10",
+    "summary": "Thoughts on designing systems that grow gracefully with complexity.",
+    "tags": ["systems", "architecture", "scaling"]
+  },
+  {
+    "title": "Mathematics in Everyday Problem Solving",
+    "slug": "mathematics-in-problem-solving",
+    "date": "2025-01-05",
+    "summary": "How mathematical thinking helps approach complex real-world challenges.",
+    "tags": ["mathematics", "problem-solving", "thinking"]
+  }
+]
