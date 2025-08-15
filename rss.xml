@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rex Liu</title>
+    <description>Mathematics student at UWaterloo interested in data, systems and architectures.</description>
+    <link>https://r3x.sh/</link>
+    <atom:link href="https://r3x.sh/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 GMT</lastBuildDate>
+    
+    <item>
+      <title>Building Systems That Scale</title>
+      <description>Thoughts on designing systems that grow gracefully with complexity.</description>
+      <link>https://r3x.sh/posts/building-systems-that-scale/</link>
+      <guid>https://r3x.sh/posts/building-systems-that-scale/</guid>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 GMT</pubDate>
+      <category>systems</category>
+      <category>architecture</category>
+      <category>scaling</category>
+    </item>
+    
+    <item>
+      <title>Mathematics in Everyday Problem Solving</title>
+      <description>How mathematical thinking helps approach complex real-world challenges.</description>
+      <link>https://r3x.sh/posts/mathematics-in-problem-solving/</link>
+      <guid>https://r3x.sh/posts/mathematics-in-problem-solving/</guid>
+      <pubDate>Sun, 05 Jan 2025 00:00:00 GMT</pubDate>
+      <category>mathematics</category>
+      <category>problem-solving</category>
+      <category>thinking</category>
+    </item>
+  </channel>
+</rss>
