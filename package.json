@@ -1,0 +1,14 @@
+{
+  "name": "r3x-sh",
+  "version": "1.0.0",
+  "description": "Personal website for Rex Liu",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "start": "python3 -m http.server 8000"
+  },
+  "keywords": ["personal", "website", "portfolio"],
+  "author": "Rex Liu",
+  "license": "MIT",
+  "type": "module"
+}
